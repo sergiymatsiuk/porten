@@ -862,7 +862,7 @@ input:focus {
         height: 60px;
     }
     .header-menu.show {
-        margin-top: 60px;
+        padding-top: 60px;
     }
     .main {
         margin-top: 60px;
