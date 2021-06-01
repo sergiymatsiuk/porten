@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@400;700&display=swap');
 
 
-
-/* font-family: 'Playfair Display', serif;
-font-family: 'PT Sans', sans-serif; */
-
 body {
     font-family: 'PT Sans', sans-serif;
     color:#fff;
@@ -96,6 +92,7 @@ input:focus {
     flex-direction: row;
     justify-content: space-between;
     font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
      
 }
 
@@ -104,7 +101,6 @@ input:focus {
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
-    font-size: 14px;
 }
 
 .header-fake-info span {
@@ -527,7 +523,7 @@ input:focus {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 .about-cat-line {
     display: flex;
@@ -538,6 +534,9 @@ input:focus {
 
 }
 .cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     margin-right: 20px;
     background-color: #0F0F0F;
@@ -604,9 +603,14 @@ input:focus {
     padding-top: 17px;
     padding-bottom: 17px;
 }
-.footer-left, .footer-right {
+.footer-left {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.footer-right {
     font-weight: 700;
-    font-style: 12px;
+    font-size: 12px;
     line-height: 16px;
 }
 .footer-right a{
@@ -735,18 +739,25 @@ input:focus {
         display: none;
     }
 
-     .brands-item {
+    .brands-items {
         display: none;
     }
     .brands-slider {
         display: flex;
+        padding-top: 40px;
+    }
+    .brands-slide {
+        padding: 0 150px;
     }
     .about .container {
         padding-top: 50px;
         padding-bottom: 50px;
     }
     .about-info {
-        padding-bottom: 25px;
+        padding-bottom: 40px;
+    }
+    .about-cat {
+        padding-bottom: 20px;
     }
     .about-cat-title {
         padding-bottom: 20px;
@@ -839,11 +850,20 @@ input:focus {
     .header-fake {
         display: none;
     }
+    a.icon-bx, a.icon-sr {
+        padding: 10px 20px;
+    }
     .main {
         margin-top: 80px;
     } 
 }
 @media  (max-width:900px) {
+    .header-main {
+        height: 60px;
+    }
+    .main {
+        margin-top: 60px;
+    }
     .new-col-slider {
         display: flex;
     }
@@ -852,6 +872,7 @@ input:focus {
     }
 }
 @media (max-width:550px) {
+    
     .info-logo {
         width: 270px;
         height: 270px;
@@ -864,6 +885,9 @@ input:focus {
     }
     .content-link {
         text-align: center;
+    }
+    .about-cat {
+        padding-bottom: 20px;
     }
     .about-cat-box {
         flex-direction: column;
@@ -878,6 +902,9 @@ input:focus {
     .cat {
         width: 100%;
         margin-bottom: 5px;
+    }
+    .footer-left {
+        padding-right: 40px;
     }
 }
 
