@@ -861,8 +861,8 @@ input:focus {
     .header-main {
         height: 60px;
     }
-    .header-menu.show {
-        padding-top: 60px;
+    .header-menu {
+        margin-top: 60px;
     }
     .main {
         margin-top: 60px;
